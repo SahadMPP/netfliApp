@@ -26,12 +26,12 @@ class DetileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF23272E),
+      backgroundColor: Colors.black,
       body: CustomScrollView(
         slivers: [
           SliverAppBar.large(
             leading: backBotton(context),
-            backgroundColor: const Color(0xFF23272E),
+            backgroundColor: Colors.black,
             expandedHeight: 500,
             pinned: true,
             floating: true,

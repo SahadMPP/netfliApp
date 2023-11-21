@@ -23,9 +23,9 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF23272E),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF23272E),
+        backgroundColor: Colors.black,
         elevation: 0,
         toolbarHeight: 65,
         title: TextField(
