@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_clone/api/api.dart';
 import 'package:netflix_clone/model/movie_model.dart';
-import 'package:netflix_clone/screens/search_screen.dart';
 import 'package:netflix_clone/widgets/top_rated_movie_card.dart';
 import 'package:netflix_clone/widgets/tranding_card.dart';
 import 'package:netflix_clone/widgets/upcoming_movie_card.dart';
@@ -36,21 +35,6 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const SearchScreen(),
-                  ));
-                },
-                icon: const Icon(shadows: [
-                  Shadow(
-                      color: Colors.black, blurRadius: 10, offset: Offset(8, 8))
-                ], Icons.search, size: 35)),
-          )
-        ],
         title: const Image(
           image: AssetImage('asset/download-removebg-preview.png'),
           fit: BoxFit.cover,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:netflix_clone/screens/home.dart';
 import 'package:netflix_clone/screens/registration_screen.dart';
+import 'package:netflix_clone/widgets/bottom_navigator.dart';
 import 'package:netflix_clone/widgets/button_loggin.dart';
 import 'package:netflix_clone/widgets/text_field.dart';
 
@@ -50,9 +50,11 @@ class LoggingScreen extends StatelessWidget {
                 color: Colors.transparent,
                 text: 'SIGN IN',
                 onpress: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const Home(),
-                  ));
+                  Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(
+                        builder: (context) => const BottomNavigatorMain(),
+                      ),
+                      (route) => false);
                 }),
           ],
         ),
