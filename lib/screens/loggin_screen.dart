@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:netflix_clone/screens/home.dart';
+import 'package:netflix_clone/screens/registration_screen.dart';
 import 'package:netflix_clone/widgets/button_loggin.dart';
 import 'package:netflix_clone/widgets/text_field.dart';
 
@@ -35,10 +37,23 @@ class LoggingScreen extends StatelessWidget {
             const TextFiledReg(
                 prefix: Icons.lock_outlined, hitText: 'Enter your Password'),
             const SizedBox(height: 50),
-            const SignBotton(
-                color: Color.fromARGB(255, 194, 24, 12), text: 'SIGN UP'),
+            SignBotton(
+                color: const Color.fromARGB(255, 194, 24, 12),
+                text: 'SIGN UP',
+                onpress: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const RegScreen(),
+                  ));
+                }),
             const SizedBox(height: 20),
-            const SignBotton(color: Colors.transparent, text: 'SIGN UP'),
+            SignBotton(
+                color: Colors.transparent,
+                text: 'SIGN IN',
+                onpress: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Home(),
+                  ));
+                }),
           ],
         ),
       ),

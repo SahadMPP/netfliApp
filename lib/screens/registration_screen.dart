@@ -43,10 +43,20 @@ class RegScreen extends StatelessWidget {
               sefix: Icons.remove_red_eye,
             ),
             const SizedBox(height: 50),
-            const SignBotton(
-                color: Color.fromARGB(255, 194, 24, 12), text: 'SIGN UP'),
+            SignBotton(
+              color: const Color.fromARGB(255, 194, 24, 12),
+              text: 'SIGN UP',
+              onpress: () {
+                Navigator.of(context).pop();
+              },
+            ),
             const SizedBox(height: 20),
-            const SignBotton(color: Colors.transparent, text: 'SIGN UP'),
+            SignBotton(
+                color: Colors.transparent,
+                text: 'SIGN IN',
+                onpress: () {
+                  Navigator.of(context).pop();
+                }),
           ],
         ),
       ),

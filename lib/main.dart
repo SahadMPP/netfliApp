@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:netflix_clone/screens/home.dart';
+import 'package:netflix_clone/screens/profile_screen.dart';
+import 'package:netflix_clone/screens/splash_screen.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Netflix',
       theme: ThemeData.dark(),
-      home: const Home(),
+      home: const ProfileScreen(),
     );
   }
 }
