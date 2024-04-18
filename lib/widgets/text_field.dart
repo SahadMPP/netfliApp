@@ -4,10 +4,12 @@ class TextFiledReg extends StatelessWidget {
   final String hitText;
   final IconData prefix;
   final IconData? sefix;
+  final bool? isPassword;
   final TextEditingController? controller;
 
   const TextFiledReg({
     super.key,
+    this.isPassword,
     required this.prefix,
     required this.hitText,
     this.sefix,
@@ -19,6 +21,7 @@ class TextFiledReg extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 50, right: 50),
       child: TextField(
+        obscureText: isPassword ?? false,
         controller: controller,
         decoration: InputDecoration(
             contentPadding: const EdgeInsets.all(10),

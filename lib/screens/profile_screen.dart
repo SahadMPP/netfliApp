@@ -63,25 +63,25 @@ class ProfileScreen extends StatelessWidget {
               leading: Icons.language,
               trilling: Icons.arrow_right,
               subtitle:
-                  'Change the languge of text you seen on Netfilx cross all drives',
+                  'Change the languge of text you seen on Netfilx',
               title: 'Display Language',
             ),
             const ProfileCard(
               leading: Icons.message,
               trilling: Icons.arrow_right,
               subtitle:
-                  'Chouse the language you like to watch, shows and movies in',
-              title: 'Audio & Subtitle Language',
+                  'Chouse the language you like to watch',
+              title: 'Subtitle Language',
             ),
             const ProfileCard(
               leading: Icons.play_lesson_sharp,
-              trilling: Icons.toggle_on_outlined,
+              trilling: Icons.toggle_on,
               subtitle: 'On all drives',
               title: 'Autoplay Next Episod ',
             ),
             const ProfileCard(
               leading: Icons.play_arrow,
-              trilling: Icons.toggle_on_outlined,
+              trilling: Icons.toggle_on,
               subtitle: 'On all drives',
               title: 'Autoplay Previews',
             ),

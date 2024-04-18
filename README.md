@@ -1,16 +1,14 @@
-# netflix_clone
+# Netflix - Mini Project 
 
-A new Flutter project.
+This project is a clone of the popular streaming platform Netflix, developed using Flutter for the frontend and Firebase for backend services. The app replicates the core features and functionalities of Netflix, allowing users to browse a vast library of movies and TV shows, create personalized watchlists, and stream content seamlessly.
 
-## Getting Started
+### Key Features:
 
-This project is a starting point for a Flutter application.
+#### User Authentication
+#### Browse Content
+#### User Profiles
+#### Responsive Design 
 
-A few resources to get you started if this is your first Flutter project:
+## App Screens:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![screenshot](3.png)

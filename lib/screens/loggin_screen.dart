@@ -34,8 +34,11 @@ class LoggingScreen extends StatelessWidget {
             const TextFiledReg(
                 prefix: Icons.person, hitText: 'Enter your email'),
             const SizedBox(height: 20),
-            const TextFiledReg(
-                prefix: Icons.lock_outlined, hitText: 'Enter your Password'),
+               const TextFiledReg(
+                isPassword: true,
+                prefix: Icons.lock_outlined,
+                hitText: 'Password',
+                sefix: Icons.visibility_off_outlined),
             const SizedBox(height: 50),
             SignBotton(
                 color: const Color.fromARGB(255, 194, 24, 12),
